@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineer Portfolio</title>
+    <style>
+        /* Import a clean, modern font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+        
+        /* Basic styles for the entire page */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c; /* A slightly lighter dark background */
+            color: #e2e8f0;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Utility styles for easy-to-read elements */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        /* A simple color for key text, replacing the gradient */
+        .highlight-text {
+            color: #64ffda;
+        }
+
+        /* Basic hover effect for a simple highlight */
+        .simple-hover:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+
+        /* Header and Navigation Styles */
+        .header {
+            background-color: #1a202c;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+        .header-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+        .nav-links a {
+            font-size: 1rem;
+            margin-left: 2rem;
+            text-decoration: none;
+            color: #e2e8f0;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: #64ffda;
+        }
+
+        /* Section styles for layout */
+        .section {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            text-align: center;
+        }
+
+        .section-header {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+        }
+
+        /* About Section */
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+        .profile-image {
+            object-fit: cover;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 3px solid #64ffda;
+        }
+        .about-text-container {
+            max-width: 800px;
+        }
+        .about-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 0;
+        }
+        .about-subtitle {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #cbd5e0;
+            margin-bottom: 1rem;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .btn-primary {
+            background-color: #64ffda;
+            color: #1a202c;
+        }
+        .btn-secondary {
+            border: 2px solid #64ffda;
+            color: #64ffda;
+        }
+
+        /* Skills and Projects Sections */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        
+        .card {
+            background-color: #2d3748;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.25rem;
+        }
+        .card p {
+            font-size: 1rem;
+            color: #a0aec0;
+        }
+        .card a {
+            color: #64ffda;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #1a202c;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.875rem;
+            color: #718096;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="container header-nav">
+            <a href="#" class="highlight-text" style="font-size: 1.5rem; font-weight: 700;">John Doe</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- About Section -->
+        <section id="about" class="section about-content">
+            <img src="https://img.freepik.com/premium-photo/avatar-icon_665280-58322.jpg?semt=ais_incoming&w=740&q=80" alt="John Doe" class="profile-image simple-hover">
+            <div class="about-text-container">
+                <h1 class="about-title"><span class="highlight-text">John Doe</span></h1>
+                <p class="about-subtitle">Software Engineer</p>
+                <p>
+                    A passionate and creative software engineer with a knack for building robust and scalable applications. I specialize in full-stack development, with a strong focus on clean architecture and user-centric design. I'm always eager to learn new technologies and solve challenging problems.
+                </p>
+                <div class="btn-container">
+                    <a href="#contact" class="btn btn-primary simple-hover">Get In Touch</a>
+                    <a href="https://github.com/your-username" target="_blank" class="btn btn-secondary simple-hover">GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-header highlight-text">Skills</h2>
+            <div class="grid-container">
+                <div class="card simple-hover">
+                    <h3 class="highlight-text">Python</h3>
+                    <p>Experience in backend development and data analysis.</p>
+                </div>
+                <div class="card simple-hover">
+                    <h3 class="highlight-text">JavaScript</h3>
+                    <p>Proficient in modern ES6+ features and web APIs.</p>
+                </div>
+                <div class="card simple-hover">
+                    <h3 class="highlight-text">HTML & CSS</h3>
+                    <p>Strong understanding of web standards and design principles.</p>
+                </div>
+                <div class="card simple-hover">
+                    <h3 class="highlight-text">Databases</h3>
+                    <p>Experience with SQL and NoSQL databases like MongoDB.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2 class="section-header highlight-text">Projects</h2>
+            <div class="grid-container">
+                <div class="card simple-hover">
+                    <h3 class="highlight-text">Project One</h3>
+                    <p>A web application for task management with real-time updates.</p>
+                    <a href="https://github.com/your-username/project-one" target="_blank">View on GitHub →</a>
+                </div>
+                <div class="card simple-hover">
+                    <h3 class="highlight-text">Project Two</h3>
+                    <p>An automated data analysis tool that generates visualizations.</p>
+                    <a href="https://github.com/your-username/project-two" target="_blank">View on GitHub →</a>
+                </div>
+                <div class="card simple-hover">
+                    <h3 class="highlight-text">Project Three</h3>
+                    <p>A simple portfolio website generator using a command-line interface.</p>
+                    <a href="https://github.com/your-username/project-three" target="_blank">View on GitHub →</a>
+                </div>
+                <div class="card simple-hover">
+                    <h3 class="highlight-text">Project Four</h3>
+                    <p>A real-time chat application with user authentication.</p>
+                    <a href="https://github.com/your-username/project-four" target="_blank">View on GitHub →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2 class="section-header highlight-text">Contact</h2>
+            <p style="max-width: 600px; margin: 0 auto 2rem;">
+                I'm currently open to new opportunities. Feel free to reach out to me!
+            </p>
+            <div class="btn-container">
+                <a href="mailto:john.doe@example.com" class="btn btn-primary simple-hover">Email Me</a>
+                <a href="https://linkedin.com/in/your-profile" target="_blank" class="btn btn-secondary simple-hover">LinkedIn</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Designed and Built by John Doe &copy; 2024</p>
+    </footer>
+
+</body>
+</html>
